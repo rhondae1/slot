@@ -1,0 +1,19 @@
+{
+  "name": "slot",
+  "version": "0.0.0",
+  "homepage": "https://github.com/rhondae1/slot",
+  "authors": [
+    "RhondaEisenhauer <rhonda.s.eisenhauer@live.com>"
+  ],
+  "description": "A totally amusing yet useless app that creates strings of gramarically correct cursing.",
+  "license": "MIT",
+  "dependencies": {
+    "angularjs":"~1.4.5",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "firebase": "~2.2.9",
+    "requirejs": "~2.1.20",
+    "require-handlebars-plugin": "~0.11.3",
+    "angularjs": "~1.4.5"
+  }
+}

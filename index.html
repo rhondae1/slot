@@ -2,13 +2,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Slot Machine in Javascript</title>
-<meta name="description" content="Welcome to the Javascript version of Slot Machine written by Saurabh Odhyan"> 
-<meta name="keywords" content="javascript, jquery, spritely, animation, sprite, background position, slot, game, games, saurabh, odhyan">
+<title>BadLibs Grammar</title>
+<meta name="description" content="Welcome to the Javascript/Angular version of Slot Machine written by Rhonda Eisenhauer with Saurabh Odhyan"> 
+<meta name="keywords" content="javascript, jquery, spritely, animation, sprite, background position, slot, game, games, Rhonda, Eisenhauer, Saurabh, Odhyan">
 <style>
 body {
 	font-family:verdana,arial;
 	padding:20px;
+	background-color: lightblue;
 }
 .bd {
 	text-align:center;
@@ -20,8 +21,27 @@ body {
 .slot-wrapper {
 	 border: 1px solid #000000;
 }
-.slot {
-	background:url("images/reel_normal.png") repeat-y; /*Taken from http://www.swish-designs.co.uk*/
+
+#slot1 {
+	background:url("images/newReel1.png") repeat-y; /*Taken from http://www.swish-designs.co.uk*/
+	width:86px;
+	height:70px;
+	float:left;
+	border:1px solid #000;
+	background-position:0 4px;
+}
+
+#slot2 {
+	background:url("images/newReel2.png") repeat-y; /*Taken from http://www.swish-designs.co.uk*/
+	width:86px;
+	height:70px;
+	float:left;
+	border:1px solid #000;
+	background-position:0 4px;
+}
+
+#slot3 {
+	background:url("images/newReel3.png") repeat-y; /*Taken from http://www.swish-designs.co.uk*/
 	width:86px;
 	height:70px;
 	float:left;
@@ -59,6 +79,7 @@ button {
 	clear:both;
 }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script src="jquery.spritely.js"></script>
 <script src="jquery.backgroundPosition.js"></script>
@@ -69,7 +90,7 @@ button {
 <div class="hd">
 </div>
 <div class="bd">
-	<h1>Slot machine in Javascript</h1>
+	<h1>BadLibs</h1>
 	<div class="container">
 		<div class="slot-wrapper">
 			<div id="slot1" class="slot"></div>
@@ -80,9 +101,9 @@ button {
 		<div id="result"></div>
 		<div><button id="control">Start</button></div>
 	</div>
-	<div><a href="http://odhyan.com/blog/2011/05/slot-machine-in-javascript/">Learn how to build this</a></div>
+	<!-- <div><a href="http://odhyan.com/blog/2011/05/slot-machine-in-javascript/">Learn how to build this</a></div> -->
 	<div class="credits">
-		<div>Author: <a href="http://odhyan.com/blog/">Saurabh Odhyan</a></div>
+		<!-- <div>Author: <a href="http://odhyan.com/blog/">Saurabh Odhyan</a></div> -->
 		<div class="browsers">Tested in Firefox, Chrome and IE8</div>
 	</div>
 </div>

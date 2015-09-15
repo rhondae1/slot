@@ -173,9 +173,9 @@ $(document).ready(function() {
     function printResult() {
         var res;
         if(win[a.pos] === win[b.pos] && win[a.pos] === win[c.pos]) {
-            res = "You Win!";
+            res = "Nice One!";
         } else {
-            res = "You Lose";
+            res = "Spin Again?";
         }
         $('#result').html(res);
     }
@@ -184,6 +184,7 @@ $(document).ready(function() {
     var a = new Slot('#slot1', 30, 1),
         b = new Slot('#slot2', 45, 2),
         c = new Slot('#slot3', 70, 3);
+    
 
     /**
     * Slot machine controller
